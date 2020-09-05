@@ -21,5 +21,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class StartClass {
     public static void main(String[] args) {
        SpringApplication.run(StartClass.class, args);
+       System.out.println("master的一个小小的修改");   //master ：时间：2020/9/5
     }
 }
