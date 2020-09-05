@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springboot?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #默认数据源类型为：HikariDataSource，可以设置数据源类型为DruidDataSource
+    #type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml #指定主配置文件
+  mapper-locations: classpath:/mybatis/mapper/*.xml # 指定xml映射文件路径
+  type-aliases-package: com.atguigu.domain # 指定mybatis别名包
+logging:
+  level:
+    com.atguigu.dao: debug # 配置日志
+
+admin:
+  username: me
+
